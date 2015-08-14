@@ -1,0 +1,21 @@
+{
+  "name": "myapp",
+  "version": "0.0.1",
+  "authors": [
+    "minchina <minchina91@gmail.com>"
+  ],
+  "description": "express angular",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-ui": "~1.11.4",
+    "raphael": "~2.1.4",
+    "morris.js": "~0.5.1"
+  }
+}
