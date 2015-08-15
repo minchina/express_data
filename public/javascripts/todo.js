@@ -4,6 +4,13 @@ ToDo.main = function () {
 
     var linesColors = ['#00ff00', '#ff0000'];
 
+    var dialogConfig = {
+        autoOpen:false,
+        title:"dialog title",
+        width:800,
+        minHeight:200
+    }
+
     function start(data) {
         return new Morris.Line({
             element: 'myfirstchart',
@@ -22,7 +29,8 @@ ToDo.main = function () {
 
     function showDialog() {
         var $dialogElement = $("#projectDialog");
-        $dialogElement.dialog();
+        $dialogElement.dialog(dialogConfig);
+        $dialogElement.dialog('open');
     }
 
     function init() {
