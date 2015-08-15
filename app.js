@@ -4,9 +4,13 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
+
+mongoose.connect("mongodb://node:nodepass@ds033103.mongolab.com:33103/tododatabase")
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var apis = require('./routes/api')
 
 var app = express();
 
@@ -18,16 +22,18 @@ app.set('view engine', 'jade');
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'views/pages')));
+
 
 //angularjs pages
+app.use(express.static(path.join(__dirname, 'views/pages')));
 app.use(express.static(path.join(__dirname, 'angular-front')));
 
 app.use('/', routes);
 app.use('/users', users);
+app.use('/api', apis)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

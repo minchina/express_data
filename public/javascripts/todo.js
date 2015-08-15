@@ -9,7 +9,7 @@ ToDo.main = function () {
         title:"dialog title",
         width:800,
         minHeight:200
-    }
+    };
 
     function start(data) {
         return new Morris.Line({
