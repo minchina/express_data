@@ -3,9 +3,11 @@ extends layout
 block content
     h1= title
     p Welcome to #{title}
-    #myfirstchart(style='height:250px')
+    button#showdialog.btn.btn-primary click me
+    #projectDialog(title="basic dialog")
+        #myfirstchart(style='height:250px')
 
     script(type='text/javascript').
         $(document).ready(function(){
-            ToDo.main().start();
+            ToDo.main().init();
         });
