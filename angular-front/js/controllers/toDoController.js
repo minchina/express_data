@@ -6,11 +6,13 @@ todoapp.controller("todocontroller", function($scope, fetchData){
     $scope.isShow = false;
     $scope.chartData ={};
 
+
     var dialogConfig = {
         autoOpen:false,
         title:"dialog title",
         width:800,
-        minHeight:200
+        minHeight:400,
+        dialogClass:"noTitleStuff"
     };
 
 

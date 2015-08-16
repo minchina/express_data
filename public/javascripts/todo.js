@@ -1,6 +1,6 @@
 var ToDo = ToDo || {};
 
-ToDo.main = function () {
+ToDo.Main = function () {
 
     var linesColors = ['#00ff00', '#ff0000'];
 
@@ -9,6 +9,7 @@ ToDo.main = function () {
         title:"dialog title",
         width:800,
         minHeight:200
+        //dialogClass:"noTitleStuff"
     };
 
     function start(data) {
