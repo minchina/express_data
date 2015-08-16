@@ -25,7 +25,7 @@ ToDo.Main = function () {
     }
 
     function getData() {
-        $.post("/comparison", {}, start)
+        $.post("/api/comparison", {}, start)
     }
 
     function showDialog() {

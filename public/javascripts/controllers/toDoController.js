@@ -44,7 +44,7 @@ todoapp.controller("todocontroller", function($scope, fetchData){
 
 todoapp.factory('fetchData',['$window', '$http', function($scope, $http){
     return function(generateChart){
-        $http.post('/comparison', {msg:123}).
+        $http.post('/api/comparison', {msg:123}).
             then(function(response) {
 
                 generateChart(response.data);
