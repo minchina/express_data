@@ -20,6 +20,7 @@ app.set('view engine', 'jade');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -28,7 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //angularjs pages
 //app.use(express.static(path.join(__dirname, 'views')));
-app.use(express.static(path.join(__dirname, 'angular-front')));
+//app.use(express.static(path.join(__dirname, 'angular-front')));
 
 app.use('/', routes);
 app.use('/users', users);
