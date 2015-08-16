@@ -10,7 +10,7 @@ mongoose.connect("mongodb://node:nodepass@ds033103.mongolab.com:33103/tododataba
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var apis = require('./routes/api')
+var apis = require('./routes/api');
 
 var app = express();
 
@@ -26,9 +26,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-
 //angularjs pages
-app.use(express.static(path.join(__dirname, 'views/pages')));
+//app.use(express.static(path.join(__dirname, 'views')));
 app.use(express.static(path.join(__dirname, 'angular-front')));
 
 app.use('/', routes);
