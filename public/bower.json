@@ -18,6 +18,7 @@
     "raphael": "~2.1.4",
     "morris.js": "~0.5.1",
     "angular": "~1.4.4",
-    "bootstrap": "~3.3.5"
+    "bootstrap": "~3.3.5",
+    "react": "~0.13.3"
   }
 }
