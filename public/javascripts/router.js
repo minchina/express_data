@@ -3,11 +3,12 @@
     .config(function($stateProvider, $urlRouterProvider) {
         $stateProvider
             .state('showToDo', {
-                url:'/test',
-                templateUrl: 'sections/test.html',
-                controller:'ToDoController'
+                url:'/',
+                templateUrl: 'sections/index.html',
+                controller:'IndexController',
+                controllerAs: 'vm'
             });
 
-        $urlRouterProvider.otherwise("/test")
+        $urlRouterProvider.otherwise("/")
     })
 })(this, angular);
