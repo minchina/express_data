@@ -4,7 +4,7 @@
         $stateProvider
             .state('showToDo', {
                 url:'/test',
-                templateUrl: 'javascripts/controllers/test.html',
+                templateUrl: 'sections/test.html',
                 controller:'ToDoController'
             });
 
