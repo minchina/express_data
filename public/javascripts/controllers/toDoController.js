@@ -1,7 +1,6 @@
-var todoapp = angular.module("toDoApp",[]);
-
-todoapp.controller("todocontroller", function($scope, fetchData){
-
+var todoapp = angular.module("toDoApp");
+todoapp.controller("ToDoController", function($scope, fetchData){
+    console.log(12313);
     $scope.linesColors = ['#00ff00', '#ff0000'];
     $scope.isShow = false;
     $scope.chartData ={};
