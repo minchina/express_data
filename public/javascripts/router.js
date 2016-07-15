@@ -6,8 +6,10 @@
                     url: '',
                     abstract: true,
                     resolve: {
-                        application: ["$log", function ($log) {
-                            $log.info("entered root application")
+                        'application': ["$log", function ($log) {
+                            return function (){
+                                return "123";
+                            }
                         }]
                     },
                     views: {}
@@ -23,7 +25,7 @@
                         }
                     }
 
-                })
+                });
 
 
             $urlRouterProvider.otherwise("/")

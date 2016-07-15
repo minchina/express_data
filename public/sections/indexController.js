@@ -1,10 +1,11 @@
 var todoapp = angular.module("toDoApp");
-todoapp.controller("IndexController", function($scope, $log, $state){
-
+todoapp.controller("IndexController", function($scope, $log, $state, application){
     var vm = this;
     vm.staticText = "HOME PAGE";
     vm.id=1;
-    $log.warn("broker id is:" + vm.id);
+    vm.application = application;
+
+    $log.warn("broker id is:" + vm.application());
 
 });
 
