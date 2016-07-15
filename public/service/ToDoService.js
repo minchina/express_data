@@ -1,5 +1,5 @@
 (function (global, angular) {
-    angular.module('toDoApp.directive')
+    angular.module('toDoApp.service')
         .service('ToDoService', ['$resource', '$q', ToDoService]);
 
     function ToDoService($resource, $q) {
