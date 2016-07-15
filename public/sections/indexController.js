@@ -1,8 +1,11 @@
 var todoapp = angular.module("toDoApp");
-todoapp.controller("IndexController", function($scope, fetchData){
+todoapp.controller("IndexController", function($scope, $log, $state){
+
     var vm = this;
     vm.staticText = "HOME PAGE";
     vm.id=1;
+    $log.warn("broker id is:" + vm.id);
+
 });
 
 todoapp.factory('fetchData',['$window', '$http', function($scope, $http){
