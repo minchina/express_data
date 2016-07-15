@@ -5,6 +5,11 @@ router.get('/d3',function(req,res){
     res.sendfile("views/pages/d3.html");
 });
 
+router.get('/todo/:todoNumber' , function(req, res) {
+    console.log(req)
+    res.sendStatus("200");
+});
+
 router.post('/comparison', function(req,res){
     res.json([
         { year: '2008', value1: 20, value2:10},
