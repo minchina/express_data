@@ -16,9 +16,14 @@
     <script type='text/javascript' src='/bower_components/angular-ui-router/release/angular-ui-router.js'></script>
 </head>
 <body ng-app="toDoApp">
-<div ui-view></div>
+<div ui-view="header"></div>
+<div ui-view="content"></div>
+<div ui-view="footer"></div>
 
 <script type="text/javascript" src="/javascripts/router.js" ></script>
 <script type="text/javascript" src="/sections/indexController.js" ></script>
+<script type="text/javascript" src="/sections/header/HeaderController.js" ></script>
+<script type="text/javascript" src="/sections/footer/FooterController.js" ></script>
+<script type="text/javascript" src="/sections/about/AboutController.js" ></script>
 </body>
 </html>
