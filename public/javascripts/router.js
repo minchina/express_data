@@ -1,5 +1,6 @@
 (function (global, angular) {
     angular.module("toDoApp", ['ui.router'])
+        .constant("SECTION", "sections")
         .config(function ($stateProvider, $urlRouterProvider) {
             $stateProvider
                 .state('root', {
@@ -31,7 +32,7 @@
                     parent: 'root',
                     views: {
                         'content@': {
-                            templateUrl: 'sections/index.html',
+                            templateUrl: 'sections/index/index.html',
                             controller: 'IndexController',
                             controllerAs: 'vm'
                         }
