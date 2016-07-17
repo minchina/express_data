@@ -15,7 +15,8 @@
             );
 
         return {
-            retireveTodos: retireveTodos
+            retireveTodos: retireveTodos,
+            updateTodos, updateTodos
         };
 
         function retireveTodos() {
@@ -26,11 +27,11 @@
 
         }
 
-        function updateTodos(params) {
-            return $q.when(123)
-            .then(function(todoNumber) {
-                return _resourceToDos.save().$promise;
-            })
+        function updateTodos(todoNumber) {
+            return $q.when(todoNumber)
+                .then(function (todoNumber) {
+                    return _resourceToDos.update({"todoNumber": todoNumber}).$promise;
+                })
         }
 
     }

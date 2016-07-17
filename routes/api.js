@@ -9,6 +9,9 @@ router.get('/todo' , function(req, res) {
     res.json([{"name":"xiang"}, {"name":"mao"}])
 });
 
+router.put('/todo/:todoNumber' , function(req, res) {
+});
+
 router.post('/comparison', function(req,res){
     res.json([
         { year: '2008', value1: 20, value2:10},

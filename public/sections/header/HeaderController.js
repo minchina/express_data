@@ -7,7 +7,6 @@ angular.module("toDoApp")
     vm.label="Panel";
 
     function goAboutPage() {
-        //console.log(123);
         $state.go('about');
     }
 
