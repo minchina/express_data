@@ -26,5 +26,12 @@
 
         }
 
+        function updateTodos(params) {
+            return $q.when(123)
+            .then(function(todoNumber) {
+                return _resourceToDos.save().$promise;
+            })
+        }
+
     }
 })(this, angular);

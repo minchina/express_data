@@ -11,6 +11,9 @@
                             return function (){
                                 return "123";
                             }
+                        }],
+                        'users' : ["ToDoService", function(ToDoService) {
+                            return ToDoService.retireveTodos();
                         }]
                     },
                     views: {

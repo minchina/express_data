@@ -1,16 +1,11 @@
 (function(global, angular){
     angular.module("toDoApp")
-        .controller("IndexController", function ($scope, $log, $state, application, ToDoService) {
+        .controller("IndexController", function ($scope, $log, $state, application, users) {
             var vm = this;
-            vm.staticText = "HOME PAGE";
-            vm.id = 1;
             vm.application = application;
-            vm.users = [];
-            ToDoService.retireveTodos().then(function (response) {
-                vm.users = response;
-            });
+            vm.users = users;
 
-            $log.warn("broker id is:" + vm.application());
+            $log.info("indexController has been called");
 
         });
 })(this, angular);
