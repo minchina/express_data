@@ -1,5 +1,5 @@
 (function (global, angular) {
-    angular.module("toDoApp", ['ui.router', 'toDoApp.service'])
+    angular.module("toDoApp", ['ui.router', 'toDoApp.service', 'toDoApp.directive'])
         .constant("SECTION", "sections")
         .config(function ($stateProvider, $urlRouterProvider) {
             $stateProvider
