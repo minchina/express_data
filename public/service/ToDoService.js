@@ -20,7 +20,7 @@
         };
 
         function retireveTodos() {
-            return $q.when(123)
+            return $q.when()
                 .then(function (result) {
                     return _resourceToDos.query().$promise;
                 })

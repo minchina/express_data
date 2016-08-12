@@ -15,5 +15,8 @@
     "mongoose": "^4.1.2",
     "morgan": "^1.6.1",
     "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "protractor": "^4.0.2"
   }
 }
